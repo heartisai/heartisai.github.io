@@ -344,7 +344,7 @@
 <h1 id="EasyUI时间控件datetimebox的初始化"><a href="#EasyUI时间控件datetimebox的初始化" class="headerlink" title="EasyUI时间控件datetimebox的初始化"></a>EasyUI时间控件datetimebox的初始化</h1><p>刚使用EasyUI的时间控件时，遇到一个问题，那就是如何初始化该该控件为系统当前时间或当前时间前一个小时，在网上搜了很久也没有满意答案<br>本文前两点时间格式化和时间日期计算都是为了这个EasyUI时间控件初始化做准备的<br>使用方式如下</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"startTime"</span> <span class="attr">id</span>=<span class="string">"startTime"</span>  <span class="attr">class</span>=<span class="string">"easyui-datetimebox"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">data-options</span>=<span class="string">"required:true,missingMessage:'开始时间不能为空', editable:false,</span></span></span><br><span class="line"><span class="tag"><span class="string">    value:$.getDateStr(&#123;H:-1&#125;)"</span> <span class="attr">style</span>=<span class="string">"width:183px;"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>说明</strong><br>这里的 value:$.getDateStr({H:-1}) 即是设置初始时间为当前时间的前一个小时</p>
+<p><strong>说明</strong><br>这里的<code>value:$.getDateStr({H:-1})</code>即是设置初始时间为当前时间的前一个小时</p>
 <p>完</p>
 
     </div>
